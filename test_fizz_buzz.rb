@@ -13,4 +13,10 @@ class TestFizzBuzz < Minitest::Test
     result = fb.sequence
     assert_equal 'Fizz', result[2]
   end
+
+  def test_generate_buzz_for_multiple_of_5
+    fb = FizzBuzz.new
+    result = fb.sequence
+    assert_equal 'Buzz', result[4]
+  end
 end
