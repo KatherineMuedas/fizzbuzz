@@ -5,13 +5,19 @@ class FizzBuzz
 
   def sequence
     numbers.collect do |n|
-      if (n % 3 == 0) and (n % 5 == 0)
+      if multiple_of(3,n) and multiple_of(5,n)
         'FizzBuzz'
-      elsif (n % 3 == 0)
+      elsif multiple_of(3,n)
         'Fizz'
-      elsif (n % 5 == 0)
+      elsif multiple_of(5,n)
         'Buzz'
       end
     end
+  end
+
+  private
+
+  def multiple_of(divisor,number)
+    number % divisor == 0
   end
 end
