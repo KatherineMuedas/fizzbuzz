@@ -4,7 +4,9 @@ class FizzBuzzEngine
   end
 
   def value
-    'Fizz' if multiple_of(3)
+    return 'FizzBuzz' if multiple_of(3) and multiple_of(5)
+    return 'Fizz' if multiple_of(3)
+    return 'Buzz' if multiple_of(5)
   end
 
   private
