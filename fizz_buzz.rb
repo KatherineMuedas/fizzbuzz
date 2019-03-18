@@ -6,7 +6,7 @@ class FizzBuzz
 
   def sequence
     numbers.collect do |n|
-      if multiple_of(3,n) and multiple_of(5,n)
+      if multiple_of(15,n)
         fbe =  FizzBuzzEngine.new(n)
         fbe.value
       elsif multiple_of(3,n)
