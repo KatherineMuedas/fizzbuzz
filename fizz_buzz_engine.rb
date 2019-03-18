@@ -7,6 +7,7 @@ class FizzBuzzEngine
     return 'FizzBuzz' if multiple_of(15)
     return 'Fizz' if multiple_of(3)
     return 'Buzz' if multiple_of(5)
+    @number
   end
 
   private
